@@ -1,0 +1,1658 @@
+diff -urN a/po/bn_IN.po b/po/bn_IN.po
+--- a/po/bn_IN.po	2010-05-05 20:50:51.043037547 +0530
++++ b/po/bn_IN.po	2010-05-05 20:51:18.870142971 +0530
+@@ -7,13 +7,13 @@
+ # Samia Niamatullah <mailsamia2001@yahoo.com>, 2005.
+ # Runa Bhattacharjee <runabh@gmail.com>, 2007.
+ # Runa Bhattacharjee <runab@fedoraproject.org>, 2008.
+-# Runa Bhattacharjee <runab@redhat.com>, 2009.
++# Runa Bhattacharjee <runab@redhat.com>, 2009, 2010.
+ msgid ""
+ msgstr ""
+ "Project-Id-Version: bn_IN\n"
+-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=sound-juicer&component=general\n"
+-"POT-Creation-Date: 2009-08-04 19:30+0000\n"
+-"PO-Revision-Date: 2009-08-26 15:35+0530\n"
++"Report-Msgid-Bugs-To: \n"
++"POT-Creation-Date: 2010-03-29 14:50+0530\n"
++"PO-Revision-Date: 2010-04-16 11:16+0530\n"
+ "Last-Translator: Runa Bhattacharjee <runab@redhat.com>\n"
+ "Language-Team: Bengali INDIA <anubad@lists.ankur.org.in>\n"
+ "MIME-Version: 1.0\n"
+@@ -124,7 +124,7 @@
+ msgstr "পূর্ববর্তী ট্র্যাকে পিছিয়ে যান"
+ 
+ #: ../data/sound-juicer.glade.h:23 ../src/sj-main.c:139 ../src/sj-main.c:141
+-#: ../src/sj-main.c:1641
++#: ../src/sj-main.c:1640
+ msgid "Sound Juicer"
+ msgstr "Sound Juicer"
+ 
+@@ -146,7 +146,7 @@
+ 
+ #: ../data/sound-juicer.glade.h:27
+ msgid "_Contents"
+-msgstr "সূচি (_C)"
++msgstr "সূচিপত্র (_C)"
+ 
+ #: ../data/sound-juicer.glade.h:28 ../src/sj-main.c:232
+ msgid "_Continue"
+@@ -178,7 +178,7 @@
+ 
+ #: ../data/sound-juicer.glade.h:35
+ msgid "_Help"
+-msgstr "সহায়তা (_H)"
++msgstr "সাহায্য (_H)"
+ 
+ #: ../data/sound-juicer.glade.h:36
+ msgid "_Next Track"
+@@ -396,7 +396,7 @@
+ msgstr "CD পড়তে ব্যর্থ"
+ 
+ #: ../libjuicer/sj-metadata-cdtext.c:93 ../libjuicer/sj-metadata-cdtext.c:114
+-#: ../libjuicer/sj-metadata-gvfs.c:109 ../libjuicer/sj-metadata-gvfs.c:132
++#: ../libjuicer/sj-metadata-gvfs.c:109 ../libjuicer/sj-metadata-gvfs.c:135
+ #: ../libjuicer/sj-metadata-musicbrainz.c:328 ../src/egg-play-preview.c:466
+ msgid "Unknown Artist"
+ msgstr "অজানা শিল্পী"
+@@ -406,12 +406,12 @@
+ msgid "Unknown Title"
+ msgstr "অজানা শিরোনাম"
+ 
+-#: ../libjuicer/sj-metadata-cdtext.c:113 ../libjuicer/sj-metadata-gvfs.c:129
++#: ../libjuicer/sj-metadata-cdtext.c:113 ../libjuicer/sj-metadata-gvfs.c:131
+ #, c-format
+ msgid "Track %d"
+ msgstr "ট্র্যাক %d"
+ 
+-#: ../libjuicer/sj-metadata-getter.c:249
++#: ../libjuicer/sj-metadata-getter.c:253
+ #, c-format
+ msgid "Could not create CD lookup thread"
+ msgstr "CD লুক-আপ থ্রেড নির্মাণ করতে ব্যর্থ"
+@@ -421,7 +421,7 @@
+ msgid "Cannot access CD"
+ msgstr "CD পড়তে ব্যর্থ"
+ 
+-#: ../libjuicer/sj-metadata-gvfs.c:150
++#: ../libjuicer/sj-metadata-gvfs.c:156
+ #, c-format
+ msgid "Cannot access CD: %s"
+ msgstr "CD পড়তে ব্যর্থ: %s"
+@@ -453,7 +453,7 @@
+ msgid "The URI of the audio file"
+ msgstr "অডিও ফাইলের URI"
+ 
+-#: ../src/egg-play-preview.c:175 ../src/sj-main.c:626 ../src/sj-main.c:1798
++#: ../src/egg-play-preview.c:175 ../src/sj-main.c:626 ../src/sj-main.c:1797
+ msgid "Title"
+ msgstr "শিরোনাম"
+ 
+@@ -461,7 +461,7 @@
+ msgid "The title of the current stream."
+ msgstr "বর্তমান স্ট্রিমের শিরোনাম।"
+ 
+-#: ../src/egg-play-preview.c:185 ../src/sj-main.c:632 ../src/sj-main.c:1807
++#: ../src/egg-play-preview.c:185 ../src/sj-main.c:632 ../src/sj-main.c:1806
+ msgid "Artist"
+ msgstr "শিল্পী"
+ 
+@@ -485,7 +485,7 @@
+ msgid "The position in the current stream in seconds."
+ msgstr "বর্তমান স্ট্রিমের মধ্যে, সেকেন্ড অনুযায়ী চিহ্নিত অবস্থান।"
+ 
+-#: ../src/egg-play-preview.c:215 ../src/sj-main.c:1818
++#: ../src/egg-play-preview.c:215 ../src/sj-main.c:1817
+ msgid "Duration"
+ msgstr "অবকাল"
+ 
+@@ -553,25 +553,25 @@
+ "মাহে আলম খান (makl10n@yahoo.com)\n"
+ "রুণা ভট্টাচার্য (runabh@gmail.com)"
+ 
+-#: ../src/sj-extracting.c:146
++#: ../src/sj-extracting.c:147
+ #, c-format
+ msgid "Failed to get output format"
+ msgstr "আউটপুট বিন্যাস প্রাপ্ত করতে ব্যর্থ"
+ 
+-#: ../src/sj-extracting.c:167
++#: ../src/sj-extracting.c:168
+ msgid "Name too long"
+ msgstr "অতিরিক্ত লম্বা নাম"
+ 
+ #. TODO: find out why GTK+ needs this to work (see #364371)
+-#: ../src/sj-extracting.c:226
++#: ../src/sj-extracting.c:227
+ msgid "Extract"
+ msgstr "এক্সট্র্যাক্ট করুন"
+ 
+-#: ../src/sj-extracting.c:303
++#: ../src/sj-extracting.c:304
+ msgid "A file with the same name exists"
+ msgstr "একই নামের একটি ফাইল বর্তমানে উপস্থিত রয়েছে"
+ 
+-#: ../src/sj-extracting.c:305
++#: ../src/sj-extracting.c:306
+ #, c-format
+ msgid ""
+ "A file called '%s' exists, size %s.\n"
+@@ -580,60 +580,57 @@
+ "'%s' নামক একটি ফাইল বর্তমানে উপস্থিত, %s.\n"
+ "আপনি এই ট্র্যাকটি এড়িয়ে যেতে অথবা নতুন করে লিখতে ইচ্ছুক কি?"
+ 
+-#: ../src/sj-extracting.c:315
++#: ../src/sj-extracting.c:316
+ msgid "_Skip"
+ msgstr "এড়িয়ে যাওয়া হবে (_S)"
+ 
+-#: ../src/sj-extracting.c:316
++#: ../src/sj-extracting.c:317
+ msgid "S_kip All"
+ msgstr "সমস্ত উপেক্ষা করা হবে (_k)"
+ 
+-#: ../src/sj-extracting.c:317
++#: ../src/sj-extracting.c:318
+ msgid "_Overwrite"
+ msgstr "নতুন করে লেখা হবে (_O)"
+ 
+-#: ../src/sj-extracting.c:318
++#: ../src/sj-extracting.c:319
+ msgid "Overwrite _All"
+ msgstr "সমস্ত নতুন করে লেখা হবে (_A)"
+ 
+-#: ../src/sj-extracting.c:367
++#: ../src/sj-extracting.c:368
+ #, c-format
+ msgid "Failed to create output directory: %s"
+ msgstr "আউটপুট ডিরেক্টরি নির্মাণ করতে ব্যর্থ: %s"
+ 
+-#: ../src/sj-extracting.c:507
++#: ../src/sj-extracting.c:508
+ #, c-format
+ msgid "Estimated time left: %d:%02d (at %0.1f×)"
+ msgstr "আনুমানিক অবশিষ্ট সময়: %d:%02d (%0.1f× গতিতে)"
+ 
+-#: ../src/sj-extracting.c:509
++#: ../src/sj-extracting.c:510
+ msgid "Estimated time left: unknown"
+ msgstr "আনুমানিক অবশিষ্ট সময়: অজানা"
+ 
+-#: ../src/sj-extracting.c:599
++#: ../src/sj-extracting.c:600
+ msgid "CD rip complete"
+ msgstr "CD-র তথ্য আহরণ সমাপ্ত হয়েছে"
+ 
+-#: ../src/sj-extracting.c:691
+-#| msgid ""
+-#| "Sound Juicer could not extract this CD.\n"
+-#| "Reason: %s"
++#: ../src/sj-extracting.c:692
+ msgid "Sound Juicer could not extract this CD."
+ msgstr "Sound Juicer দ্বারা এই CD-টি এক্সট্র্যাক্ট করা সম্ভব হয়নি।"
+ 
+-#: ../src/sj-extracting.c:693 ../src/sj-main.c:185 ../src/sj-main.c:814
+-#: ../src/sj-main.c:932 ../src/sj-main.c:1033 ../src/sj-main.c:1245
+-#: ../src/sj-main.c:1601
++#: ../src/sj-extracting.c:694 ../src/sj-main.c:185 ../src/sj-main.c:814
++#: ../src/sj-main.c:931 ../src/sj-main.c:1032 ../src/sj-main.c:1244
++#: ../src/sj-main.c:1600
+ msgid "Reason"
+ msgstr "কারণ"
+ 
+ #. Change the label to Stop while extracting
+ #. TODO: find out why GTK+ needs this to work (see #364371)
+-#: ../src/sj-extracting.c:789
++#: ../src/sj-extracting.c:790
+ msgid "Stop"
+ msgstr "বন্ধ করুন"
+ 
+-#: ../src/sj-extracting.c:818 ../src/sj-extracting.c:824
++#: ../src/sj-extracting.c:819 ../src/sj-extracting.c:825
+ msgid "Extracting audio from CD"
+ msgstr "CD থেকে অডিও এক্সট্র্যাক্ট করা হচ্ছে"
+ 
+@@ -742,63 +739,63 @@
+ msgid "You can improve the MusicBrainz database by adding this album."
+ msgstr "MusicBrainz ডাটাবেসের মধ্যে এই সংকলনটি যোগ করে ডাটাবেসটি সমৃদ্ধ করুন।"
+ 
+-#: ../src/sj-main.c:812 ../src/sj-main.c:928 ../src/sj-main.c:1031
++#: ../src/sj-main.c:812 ../src/sj-main.c:927 ../src/sj-main.c:1030
+ msgid "Could not read the CD"
+ msgstr "CD পড়তে ব্যর্থ"
+ 
+-#: ../src/sj-main.c:813 ../src/sj-main.c:931
++#: ../src/sj-main.c:813 ../src/sj-main.c:930
+ msgid "Sound Juicer could not read the track listing on this CD."
+ msgstr "সাউন্ড জুসার এই সিডির ট্র্যাকের তালিকা পড়তে পারছে না।"
+ 
+ #. Set statusbar message
+-#: ../src/sj-main.c:902
++#: ../src/sj-main.c:901
+ msgid "Retrieving track listing...please wait."
+ msgstr "ট্র্যাকের তালিকা পড়া হচ্ছে...অনুগ্রহ করে অপেক্ষা করুন।"
+ 
+-#: ../src/sj-main.c:992
++#: ../src/sj-main.c:991
+ #, c-format
+ msgid "Sound Juicer could not use the CD-ROM device '%s'"
+ msgstr "Sound Juicer দ্বারা CD-ROM ডিভাইস '%s' ব্যবহার করা সম্ভব হয়নি"
+ 
+-#: ../src/sj-main.c:999
++#: ../src/sj-main.c:998
+ msgid "HAL daemon may not be running."
+ msgstr "HAL ডেমন সম্ভবত চলছে না।"
+ 
+-#: ../src/sj-main.c:1024
++#: ../src/sj-main.c:1023
+ #, c-format
+ msgid "Sound Juicer could not access the CD-ROM device '%s'"
+ msgstr "Sound Juicer দ্বারা CD-ROM ডিভাইস '%s' থেকে পড়া সম্ভব হয়নি"
+ 
+-#: ../src/sj-main.c:1123
++#: ../src/sj-main.c:1122
+ msgid "No CD-ROM drives found"
+ msgstr "কোনো CD-ROM ড্রাইভ পাওয়া যায়নি"
+ 
+-#: ../src/sj-main.c:1124
++#: ../src/sj-main.c:1123
+ msgid "Sound Juicer could not find any CD-ROM drives to read."
+ msgstr "পড়ার জন্য Sound Juicer দ্বারা কোনো CD-ROM ড্রাইভ পাওয়া যায়নি।"
+ 
+-#: ../src/sj-main.c:1155
++#: ../src/sj-main.c:1154
+ msgid "The currently selected audio profile is not available on your installation."
+ msgstr "বর্তমানে নির্বাচিত অডিও প্রোফাইল আপনার সিস্টেমের ইনস্টলেশনে পাওয়া যায়নি।"
+ 
+-#: ../src/sj-main.c:1157
++#: ../src/sj-main.c:1156
+ msgid "_Change Profile"
+ msgstr "প্রোফাইল পরিবর্তন করুন (_C)"
+ 
+-#: ../src/sj-main.c:1243
++#: ../src/sj-main.c:1242
+ msgid "Could not open URL"
+ msgstr "URL খুলতে ব্যর্থ"
+ 
+-#: ../src/sj-main.c:1244
++#: ../src/sj-main.c:1243
+ msgid "Sound Juicer could not open the submission URL"
+ msgstr "Sound Juicer দ্বারা উল্লিখিত URL খোলা সম্ভব হয়নি"
+ 
+-#: ../src/sj-main.c:1353
++#: ../src/sj-main.c:1352
+ #, c-format
+ msgid "Unknown column %d was edited"
+ msgstr "অজানা কমান্ড %d পরিবর্তন করা হয়েছে"
+ 
+-#: ../src/sj-main.c:1494 ../src/sj-prefs.c:103
++#: ../src/sj-main.c:1493 ../src/sj-prefs.c:103
+ #, c-format
+ msgid ""
+ "Could not display help for Sound Juicer\n"
+@@ -807,49 +804,49 @@
+ "Sound Juicer-র জন্য সহায়িকা প্রদর্শন করতে ব্যর্থ\n"
+ "%s"
+ 
+-#: ../src/sj-main.c:1599
++#: ../src/sj-main.c:1598
+ msgid "Could not duplicate disc"
+ msgstr "ডিস্কের প্রতিলিপি নির্মাণ করতে ব্যর্থ"
+ 
+-#: ../src/sj-main.c:1600
++#: ../src/sj-main.c:1599
+ msgid "Sound Juicer could not duplicate the disc"
+ msgstr "Sound Juicer দ্বারা ডিস্কের প্রতিলিপি নির্মাণ করা সম্ভব হয়নি"
+ 
+-#: ../src/sj-main.c:1628
++#: ../src/sj-main.c:1627
+ msgid "Start extracting immediately"
+ msgstr "এই মুহূর্তে এক্সট্র্যাক্ট আরম্ভ করা হবে"
+ 
+-#: ../src/sj-main.c:1629
++#: ../src/sj-main.c:1628
+ msgid "Start playing immediately"
+ msgstr "এই মুহূর্তে চালানো হবে"
+ 
+-#: ../src/sj-main.c:1630
++#: ../src/sj-main.c:1629
+ msgid "What CD device to read"
+ msgstr "যে CD ডিভাইস থেকে পড়া হবে"
+ 
+-#: ../src/sj-main.c:1630
++#: ../src/sj-main.c:1629
+ msgid "DEVICE"
+ msgstr "DEVICE"
+ 
+-#: ../src/sj-main.c:1631
++#: ../src/sj-main.c:1630
+ msgid "URI to the CD device to read"
+ msgstr "পাঠের জন্য চিহ্নিত CD ডিভাইসের URI"
+ 
+-#: ../src/sj-main.c:1644
++#: ../src/sj-main.c:1643
+ msgid "- Extract music from your CDs"
+ msgstr "- CD থেকে সংগীত এক্সট্র্যাক্ট করুন"
+ 
+-#: ../src/sj-main.c:1681
++#: ../src/sj-main.c:1680
+ msgid "Could not create GConf client.\n"
+ msgstr "GConf ক্লায়েন্ট নির্মাণ করতে ব্যর্থ।\n"
+ 
+ #. this is made up
+-#: ../src/sj-main.c:1715
++#: ../src/sj-main.c:1714
+ #, c-format
+ msgid "The interface file for Sound Juicer could not be read."
+ msgstr "Sound Juicer-র প্রেক্ষাপটের ফাইল পড়তে ব্যর্থ।"
+ 
+-#: ../src/sj-main.c:1783
++#: ../src/sj-main.c:1782
+ msgid "Track"
+ msgstr "ট্র্যাক"
+ 
+diff -urN a/po/es.po b/po/es.po
+--- a/po/es.po	2010-05-05 20:50:51.042037625 +0530
++++ b/po/es.po	2010-05-05 20:51:18.448192224 +0530
+@@ -1,20 +1,20 @@
+-# translation of sound-juicer.HEAD.po to Español
++# translation of es.po to Spanish
+ # Spanish translation for Sound Juicer.
+-# Copyright (C) 2003, 2004, 2005, 2006, 2007, 2008 Free Software Foundation, Inc.
++# Copyright (C) 2003, 2004, 2005, 2006, 2007, 2008, 2010 Free Software Foundation, Inc.
+ # This file is distributed under the same license as the sound-juicer package.
+ #
+ # Enrique Rodriguez <krm@futurnet.es>, 2003.
+ # Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2003-2005, 2006.
+ # Jorge González <jorgegonz@svn.gnome.org>, 2007, 2008, 2009.
++# Gladys Guerrero  <gguerrer@redhat.com>, 2010.
+ msgid ""
+ msgstr ""
+-"Project-Id-Version: sound-juicer.HEAD\n"
+-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=sound-"
+-"juicer&component=general\n"
+-"POT-Creation-Date: 2009-05-07 15:29+0000\n"
+-"PO-Revision-Date: 2009-05-08 20:09+0200\n"
+-"Last-Translator: Jorge González <jorgegonz@svn.gnome.org>\n"
+-"Language-Team: Español <gnome-es-list@gnome.org>\n"
++"Project-Id-Version: es\n"
++"Report-Msgid-Bugs-To: \n"
++"POT-Creation-Date: 2010-03-29 14:50+0530\n"
++"PO-Revision-Date: 2010-04-01 15:10+1000\n"
++"Last-Translator: Gladys Guerrero  <gguerrer@redhat.com>\n"
++"Language-Team: Spanish <es@li.org>\n"
+ "MIME-Version: 1.0\n"
+ "Content-Type: text/plain; charset=UTF-8\n"
+ "Content-Transfer-Encoding: 8bit\n"
+@@ -71,7 +71,7 @@
+ 
+ #: ../data/sound-juicer.glade.h:11
+ msgid "CD _drive:"
+-msgstr "_Unidad de CD:"
++msgstr "Uni_dad de CD:"
+ 
+ #: ../data/sound-juicer.glade.h:12
+ msgid "E_ject"
+@@ -99,7 +99,7 @@
+ 
+ #: ../data/sound-juicer.glade.h:18
+ msgid "Pre_vious Track"
+-msgstr "Pista _anterior"
++msgstr "Pista pre_via"
+ 
+ #: ../data/sound-juicer.glade.h:19
+ msgid "Preferences"
+@@ -140,7 +140,7 @@
+ 
+ #: ../data/sound-juicer.glade.h:27
+ msgid "_Contents"
+-msgstr "Índ_ice"
++msgstr "Índi_ce"
+ 
+ #: ../data/sound-juicer.glade.h:28 ../src/sj-main.c:232
+ msgid "_Continue"
+@@ -148,7 +148,7 @@
+ 
+ #: ../data/sound-juicer.glade.h:29
+ msgid "_Deselect All"
+-msgstr "_Deseleccionar todo"
++msgstr "_Desmarcar todo"
+ 
+ #: ../data/sound-juicer.glade.h:30
+ msgid "_Disc"
+@@ -168,7 +168,7 @@
+ 
+ #: ../data/sound-juicer.glade.h:34
+ msgid "_Folder:"
+-msgstr "_Carpeta:"
++msgstr "_Fólder:"
+ 
+ #: ../data/sound-juicer.glade.h:35
+ msgid "_Help"
+@@ -176,7 +176,7 @@
+ 
+ #: ../data/sound-juicer.glade.h:36
+ msgid "_Next Track"
+-msgstr "Pista _siguiente"
++msgstr "Pista siguie_nte"
+ 
+ #: ../data/sound-juicer.glade.h:37
+ msgid "_Open music folder when finished"
+@@ -184,7 +184,7 @@
+ 
+ #: ../data/sound-juicer.glade.h:38
+ msgid "_Play / Pause"
+-msgstr "_Reproducir / Pausar"
++msgstr "Re_producir / Pausar"
+ 
+ #: ../data/sound-juicer.glade.h:39
+ msgid "_Re-read Disc"
+@@ -196,11 +196,11 @@
+ 
+ #: ../data/sound-juicer.glade.h:41
+ msgid "_Strip special characters"
+-msgstr "_Quitar caracteres especiales"
++msgstr "Quitar caractere_s especiales"
+ 
+ #: ../data/sound-juicer.glade.h:42
+ msgid "_Submit Track Names..."
+-msgstr "_Enviar nombres de pistas…"
++msgstr "Enviar nombre_s de pistas…"
+ 
+ #: ../data/sound-juicer.schemas.in.h:2
+ #, no-c-format
+@@ -265,8 +265,7 @@
+ 
+ #: ../data/sound-juicer.schemas.in.h:9
+ msgid "If to strip special characters from filenames"
+-msgstr ""
+-"Indica si deben quitarse los caracteres especiales de los nombres de archivo"
++msgstr "Indica si deben quitarse los caracteres especiales de los nombres de archivo"
+ 
+ #: ../data/sound-juicer.schemas.in.h:10
+ msgid ""
+@@ -302,8 +301,7 @@
+ 
+ #: ../data/sound-juicer.schemas.in.h:17
+ msgid "Whether to open the target directory when finished extracting."
+-msgstr ""
+-"Indica si se debe abrir el directorio de destino al terminar la extracción."
++msgstr "Indica si se debe abrir el directorio de destino al terminar la extracción."
+ 
+ #: ../libjuicer/sj-extractor.c:192
+ msgid "Audio Profile"
+@@ -355,10 +353,8 @@
+ 
+ #: ../libjuicer/sj-extractor.c:447
+ #, c-format
+-msgid ""
+-"Extractor object is not valid. This is bad, check your console for errors."
+-msgstr ""
+-"El objeto extractor no es válido. Esto es malo, busque errores en su consola."
++msgid "Extractor object is not valid. This is bad, check your console for errors."
++msgstr "El objeto extractor no es válido. Esto es malo, busque errores en su consola."
+ 
+ #: ../libjuicer/sj-extractor.c:655
+ #, c-format
+@@ -377,8 +373,7 @@
+ 
+ #: ../libjuicer/sj-metadata.c:193
+ #, c-format
+-msgid ""
+-"Device '%s' could not be opened. Check the access permissions on the device."
++msgid "Device '%s' could not be opened. Check the access permissions on the device."
+ msgstr ""
+ " El dispositivo «%s» no se pudo abrir. Compruebe los permisos de acceso del "
+ "dispositivo."
+@@ -394,22 +389,22 @@
+ msgstr "No se puede leer el CD"
+ 
+ #: ../libjuicer/sj-metadata-cdtext.c:93 ../libjuicer/sj-metadata-cdtext.c:114
+-#: ../libjuicer/sj-metadata-gvfs.c:110 ../libjuicer/sj-metadata-gvfs.c:133
++#: ../libjuicer/sj-metadata-gvfs.c:109 ../libjuicer/sj-metadata-gvfs.c:135
+ #: ../libjuicer/sj-metadata-musicbrainz.c:328 ../src/egg-play-preview.c:466
+ msgid "Unknown Artist"
+ msgstr "Artista desconocido"
+ 
+-#: ../libjuicer/sj-metadata-cdtext.c:94 ../libjuicer/sj-metadata-gvfs.c:106
++#: ../libjuicer/sj-metadata-cdtext.c:94 ../libjuicer/sj-metadata-gvfs.c:105
+ #: ../libjuicer/sj-metadata-musicbrainz.c:344 ../src/egg-play-preview.c:461
+ msgid "Unknown Title"
+ msgstr "Título desconocido"
+ 
+-#: ../libjuicer/sj-metadata-cdtext.c:113 ../libjuicer/sj-metadata-gvfs.c:130
++#: ../libjuicer/sj-metadata-cdtext.c:113 ../libjuicer/sj-metadata-gvfs.c:131
+ #, c-format
+ msgid "Track %d"
+ msgstr "Pista %d"
+ 
+-#: ../libjuicer/sj-metadata-getter.c:249
++#: ../libjuicer/sj-metadata-getter.c:253
+ #, c-format
+ msgid "Could not create CD lookup thread"
+ msgstr "No se pudo crear el hilo de búsqueda del CD"
+@@ -419,7 +414,7 @@
+ msgid "Cannot access CD"
+ msgstr "No se puede acceder al CD"
+ 
+-#: ../libjuicer/sj-metadata-gvfs.c:149
++#: ../libjuicer/sj-metadata-gvfs.c:156
+ #, c-format
+ msgid "Cannot access CD: %s"
+ msgstr "No se puede acceder al CD: %s"
+@@ -554,25 +549,25 @@
+ "Francisco F. Serrador <serrador@cvs.gnome.org>, 2003-2006\n"
+ "Enrique Rodríguez <krm@futurnet.es>, 2003"
+ 
+-#: ../src/sj-extracting.c:146
++#: ../src/sj-extracting.c:147
+ #, c-format
+ msgid "Failed to get output format"
+ msgstr "Falló al obtener el formato de salida"
+ 
+-#: ../src/sj-extracting.c:167
++#: ../src/sj-extracting.c:168
+ msgid "Name too long"
+ msgstr "El nombre es demasiado largo"
+ 
+ #. TODO: find out why GTK+ needs this to work (see #364371)
+-#: ../src/sj-extracting.c:226
++#: ../src/sj-extracting.c:227
+ msgid "Extract"
+ msgstr "Extraer"
+ 
+-#: ../src/sj-extracting.c:303
++#: ../src/sj-extracting.c:304
+ msgid "A file with the same name exists"
+ msgstr "Ya existe un archivo con el mismo nombre"
+ 
+-#: ../src/sj-extracting.c:305
++#: ../src/sj-extracting.c:306
+ #, c-format
+ msgid ""
+ "A file called '%s' exists, size %s.\n"
+@@ -581,60 +576,57 @@
+ "Ya existe un archivo llamado «%s», tamaño %s.\n"
+ "¿Quiere saltarse esta pista o sobreescribirla?"
+ 
+-#: ../src/sj-extracting.c:315
++#: ../src/sj-extracting.c:316
+ msgid "_Skip"
+ msgstr "_Saltar"
+ 
+-#: ../src/sj-extracting.c:316
++#: ../src/sj-extracting.c:317
+ msgid "S_kip All"
+ msgstr "_Saltar todas"
+ 
+-#: ../src/sj-extracting.c:317
++#: ../src/sj-extracting.c:318
+ msgid "_Overwrite"
+-msgstr "S_obreescribir"
++msgstr "S_obrescribir"
+ 
+-#: ../src/sj-extracting.c:318
++#: ../src/sj-extracting.c:319
+ msgid "Overwrite _All"
+-msgstr "Sobreescribir _todas"
++msgstr "Sobrescribir _todas"
+ 
+-#: ../src/sj-extracting.c:367
++#: ../src/sj-extracting.c:368
+ #, c-format
+ msgid "Failed to create output directory: %s"
+ msgstr "Falló al crear el directorio de salida: %s"
+ 
+-#: ../src/sj-extracting.c:507
++#: ../src/sj-extracting.c:508
+ #, c-format
+ msgid "Estimated time left: %d:%02d (at %0.1f×)"
+ msgstr "Tiempo restante estimado: %d:%02d (a %0.1fx)"
+ 
+-#: ../src/sj-extracting.c:509
++#: ../src/sj-extracting.c:510
+ msgid "Estimated time left: unknown"
+ msgstr "Tiempo restante estimado: desconocido"
+ 
+-#: ../src/sj-extracting.c:599
++#: ../src/sj-extracting.c:600
+ msgid "CD rip complete"
+ msgstr "Extracción de sonido del CD completada"
+ 
+-#: ../src/sj-extracting.c:691
+-#| msgid ""
+-#| "Sound Juicer could not extract this CD.\n"
+-#| "Reason: %s"
++#: ../src/sj-extracting.c:692
+ msgid "Sound Juicer could not extract this CD."
+ msgstr "Sound Juicer no pudo extraer este CD."
+ 
+-#: ../src/sj-extracting.c:693 ../src/sj-main.c:185 ../src/sj-main.c:814
+-#: ../src/sj-main.c:932 ../src/sj-main.c:1033 ../src/sj-main.c:1244
++#: ../src/sj-extracting.c:694 ../src/sj-main.c:185 ../src/sj-main.c:814
++#: ../src/sj-main.c:931 ../src/sj-main.c:1032 ../src/sj-main.c:1244
+ #: ../src/sj-main.c:1600
+ msgid "Reason"
+ msgstr "Razón"
+ 
+ #. Change the label to Stop while extracting
+ #. TODO: find out why GTK+ needs this to work (see #364371)
+-#: ../src/sj-extracting.c:789
++#: ../src/sj-extracting.c:790
+ msgid "Stop"
+ msgstr "Parar"
+ 
+-#: ../src/sj-extracting.c:818 ../src/sj-extracting.c:824
++#: ../src/sj-extracting.c:819 ../src/sj-extracting.c:825
+ msgid "Extracting audio from CD"
+ msgstr "Extrayendo sonido del CD"
+ 
+@@ -729,7 +721,7 @@
+ 
+ #: ../src/sj-main.c:418
+ msgid "S_ubmit Album"
+-msgstr "En_viar álbum"
++msgstr "Enviar álb_um"
+ 
+ #. Translators: title, artist
+ #: ../src/sj-main.c:425
+@@ -741,29 +733,29 @@
+ msgid "You can improve the MusicBrainz database by adding this album."
+ msgstr "Puede mejorar la base de datos de MusicBrainz añadiendo éste álbum."
+ 
+-#: ../src/sj-main.c:812 ../src/sj-main.c:928 ../src/sj-main.c:1031
++#: ../src/sj-main.c:812 ../src/sj-main.c:927 ../src/sj-main.c:1030
+ msgid "Could not read the CD"
+ msgstr "No se pudo leer el CD"
+ 
+-#: ../src/sj-main.c:813 ../src/sj-main.c:931
++#: ../src/sj-main.c:813 ../src/sj-main.c:930
+ msgid "Sound Juicer could not read the track listing on this CD."
+ msgstr "Sound Juicer no pudo leer la lista de pistas de este CD."
+ 
+ #. Set statusbar message
+-#: ../src/sj-main.c:902
++#: ../src/sj-main.c:901
+ msgid "Retrieving track listing...please wait."
+ msgstr "Obteniendo la lista de pistas… espere por favor."
+ 
+-#: ../src/sj-main.c:992
++#: ../src/sj-main.c:991
+ #, c-format
+ msgid "Sound Juicer could not use the CD-ROM device '%s'"
+ msgstr "Sound Juicer no pudo usar el dispositivo CD-ROM «%s»"
+ 
+-#: ../src/sj-main.c:999
++#: ../src/sj-main.c:998
+ msgid "HAL daemon may not be running."
+ msgstr "Puede que el demonio HAL no se esté ejecutando."
+ 
+-#: ../src/sj-main.c:1024
++#: ../src/sj-main.c:1023
+ #, c-format
+ msgid "Sound Juicer could not access the CD-ROM device '%s'"
+ msgstr "Sound Juicer no pudo acceder al dispositivo CD-ROM «%s»"
+@@ -777,8 +769,7 @@
+ msgstr "Sound Juicer no pudo encontrar ninguna unidad de CD-ROM para leer."
+ 
+ #: ../src/sj-main.c:1154
+-msgid ""
+-"The currently selected audio profile is not available on your installation."
++msgid "The currently selected audio profile is not available on your installation."
+ msgstr ""
+ "El perfil de sonido seleccionado actualmente no está disponible para su "
+ "instalación."
+@@ -855,7 +846,7 @@
+ msgid "Track"
+ msgstr "Pista"
+ 
+-#: ../src/sj-play.c:193 ../src/sj-play.c:461 ../src/sj-play.c:490
++#: ../src/sj-play.c:193 ../src/sj-play.c:465 ../src/sj-play.c:494
+ #, c-format
+ msgid ""
+ "Error playing CD.\n"
+@@ -881,16 +872,16 @@
+ msgid "Failed to create CD source element"
+ msgstr "Falló al crear el elemento de origen de CD"
+ 
+-#: ../src/sj-play.c:402
++#: ../src/sj-play.c:406
+ msgid "Failed to link pipeline"
+ msgstr "Falló al enlazar el conducto"
+ 
+-#: ../src/sj-play.c:408
++#: ../src/sj-play.c:412
+ #, c-format
+ msgid "Failed to create audio output"
+ msgstr "No se pudo crear la salida de sonido"
+ 
+-#: ../src/sj-play.c:612
++#: ../src/sj-play.c:616
+ #, c-format
+ msgid "Seeking to %s"
+ msgstr "Buscando %s"
+@@ -963,3 +954,4 @@
+ #: ../src/sj-prefs.c:275
+ msgid "Example Path"
+ msgstr "Ruta de ejemplo"
++
+diff -urN a/po/hi.po b/po/hi.po
+--- a/po/hi.po	2010-05-05 20:50:51.042037625 +0530
++++ b/po/hi.po	2010-05-05 20:51:19.263154316 +0530
+@@ -1,17 +1,17 @@
+-# translation of sound-juicer.master.po to Hindi
++# translation of hi.po to Hindi
+ # This file is distributed under the same license as the PACKAGE package.
+ # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+ #
+-# Rajesh Ranjan <rranjan@redhat.com>, 2005, 2006.
++# Rajesh Ranjan <rranjan@redhat.com>, 2005, 2006, 2010.
+ # Rajesh Ranjan <rajesh672@gmail.com>, 2009.
+ msgid ""
+ msgstr ""
+-"Project-Id-Version: sound-juicer.master\n"
+-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=sound-juicer&component=general\n"
+-"POT-Creation-Date: 2009-09-11 15:32+0000\n"
+-"PO-Revision-Date: 2009-09-14 15:59+0530\n"
+-"Last-Translator: Rajesh Ranjan <rajesh672@gmail.com>\n"
+-"Language-Team: Hindi <hindi.sf.net>\n"
++"Project-Id-Version: hi\n"
++"Report-Msgid-Bugs-To: \n"
++"POT-Creation-Date: 2010-03-29 14:50+0530\n"
++"PO-Revision-Date: 2010-04-16 15:31+0530\n"
++"Last-Translator: Rajesh Ranjan <rranjan@redhat.com>\n"
++"Language-Team: Hindi <Red Hat>\n"
+ "MIME-Version: 1.0\n"
+ "Content-Type: text/plain; charset=UTF-8\n"
+ "Content-Transfer-Encoding: 8bit\n"
+@@ -24,6 +24,8 @@
+ "\n"
+ "\n"
+ "\n"
++"\n"
++"\n"
+ 
+ #: ../data/sound-juicer.desktop.in.in.h:1
+ msgid "Audio CD Extractor"
+@@ -51,7 +53,7 @@
+ 
+ #: ../data/sound-juicer.glade.h:5
+ msgid "<b>Music Folder</b>"
+-msgstr "<b> संगीत फ़ोल्डर</b>"
++msgstr "<b>संगीत फ़ोल्डर</b>"
+ 
+ #: ../data/sound-juicer.glade.h:6
+ msgid "<b>Track Names</b>"
+@@ -122,7 +124,7 @@
+ msgstr "पिछले ट्रैक को जायें"
+ 
+ #: ../data/sound-juicer.glade.h:23 ../src/sj-main.c:139 ../src/sj-main.c:141
+-#: ../src/sj-main.c:1641
++#: ../src/sj-main.c:1640
+ msgid "Sound Juicer"
+ msgstr "ध्वनि जूसर"
+ 
+@@ -183,7 +185,6 @@
+ msgstr "अगला ट्रैक (_N)"
+ 
+ #: ../data/sound-juicer.glade.h:37
+-#| msgid "_Eject when finished"
+ msgid "_Open music folder when finished"
+ msgstr "समाप्त होने पर संगीत फोल्डर खोलें (_O)"
+ 
+@@ -300,7 +301,6 @@
+ msgstr "CD बाहर निकालना है क्या जब अवशोषण पूरा हो जाये."
+ 
+ #: ../data/sound-juicer.schemas.in.h:17
+-#| msgid "Whether to eject the CD when finished extracting."
+ msgid "Whether to open the target directory when finished extracting."
+ msgstr "क्या लक्ष्य निर्देशिका खोलना है जब निकालना समाप्त हो जाए."
+ 
+@@ -388,7 +388,7 @@
+ msgstr "CD नहीं पढ़ सकता है"
+ 
+ #: ../libjuicer/sj-metadata-cdtext.c:93 ../libjuicer/sj-metadata-cdtext.c:114
+-#: ../libjuicer/sj-metadata-gvfs.c:109 ../libjuicer/sj-metadata-gvfs.c:132
++#: ../libjuicer/sj-metadata-gvfs.c:109 ../libjuicer/sj-metadata-gvfs.c:135
+ #: ../libjuicer/sj-metadata-musicbrainz.c:328 ../src/egg-play-preview.c:466
+ msgid "Unknown Artist"
+ msgstr "अज्ञात कलाकार"
+@@ -398,12 +398,12 @@
+ msgid "Unknown Title"
+ msgstr "अज्ञात शीर्षक"
+ 
+-#: ../libjuicer/sj-metadata-cdtext.c:113 ../libjuicer/sj-metadata-gvfs.c:129
++#: ../libjuicer/sj-metadata-cdtext.c:113 ../libjuicer/sj-metadata-gvfs.c:131
+ #, c-format
+ msgid "Track %d"
+ msgstr "ट्रैक %d"
+ 
+-#: ../libjuicer/sj-metadata-getter.c:249
++#: ../libjuicer/sj-metadata-getter.c:253
+ #, c-format
+ msgid "Could not create CD lookup thread"
+ msgstr "सीडी लुकअप थ्रेड नहीं बना सका"
+@@ -413,7 +413,7 @@
+ msgid "Cannot access CD"
+ msgstr "CD नहीं पढ़ सकता है"
+ 
+-#: ../libjuicer/sj-metadata-gvfs.c:150
++#: ../libjuicer/sj-metadata-gvfs.c:156
+ #, c-format
+ msgid "Cannot access CD: %s"
+ msgstr "CD नहीं पढ़ सकता है: %s"
+@@ -445,7 +445,7 @@
+ msgid "The URI of the audio file"
+ msgstr "ऑडियो फ़ाइल का URI"
+ 
+-#: ../src/egg-play-preview.c:175 ../src/sj-main.c:626 ../src/sj-main.c:1798
++#: ../src/egg-play-preview.c:175 ../src/sj-main.c:626 ../src/sj-main.c:1797
+ msgid "Title"
+ msgstr "शीर्षक"
+ 
+@@ -453,7 +453,7 @@
+ msgid "The title of the current stream."
+ msgstr "मौजूदा स्ट्रीम का शीर्षक."
+ 
+-#: ../src/egg-play-preview.c:185 ../src/sj-main.c:632 ../src/sj-main.c:1807
++#: ../src/egg-play-preview.c:185 ../src/sj-main.c:632 ../src/sj-main.c:1806
+ msgid "Artist"
+ msgstr "कलाकार"
+ 
+@@ -477,7 +477,7 @@
+ msgid "The position in the current stream in seconds."
+ msgstr "सेकेंड में मौजूदा स्ट्रीम की स्थिति."
+ 
+-#: ../src/egg-play-preview.c:215 ../src/sj-main.c:1818
++#: ../src/egg-play-preview.c:215 ../src/sj-main.c:1817
+ msgid "Duration"
+ msgstr "अवधि"
+ 
+@@ -546,25 +546,25 @@
+ "राजेश रंजन (rranjan@redhat.com; rajeshkajha@yahoo.com) \n"
+ "रविशंकर श्रीवास्तव (raviratlami@yahoo.com)"
+ 
+-#: ../src/sj-extracting.c:146
++#: ../src/sj-extracting.c:147
+ #, c-format
+ msgid "Failed to get output format"
+ msgstr "आउटपुट प्रारूप पाने में विफल"
+ 
+-#: ../src/sj-extracting.c:167
++#: ../src/sj-extracting.c:168
+ msgid "Name too long"
+ msgstr "नाम बहुत लंबा है"
+ 
+ #. TODO: find out why GTK+ needs this to work (see #364371)
+-#: ../src/sj-extracting.c:226
++#: ../src/sj-extracting.c:227
+ msgid "Extract"
+ msgstr "निकालें"
+ 
+-#: ../src/sj-extracting.c:303
++#: ../src/sj-extracting.c:304
+ msgid "A file with the same name exists"
+ msgstr "समान नाम के साथ फ़ाइल मौजूद है"
+ 
+-#: ../src/sj-extracting.c:305
++#: ../src/sj-extracting.c:306
+ #, c-format
+ msgid ""
+ "A file called '%s' exists, size %s.\n"
+@@ -573,58 +573,57 @@
+ "'%s' नामक फाइल मौजूद है, आकार %s.\n"
+ "क्या आप इस ट्रैक को छोड़ना चाहते है या इसके उपर लिखना चाहते हैं?"
+ 
+-#: ../src/sj-extracting.c:315
++#: ../src/sj-extracting.c:316
+ msgid "_Skip"
+ msgstr "छोड़ें (_S)"
+ 
+-#: ../src/sj-extracting.c:316
++#: ../src/sj-extracting.c:317
+ msgid "S_kip All"
+ msgstr "सबको छोड़ें (_k)"
+ 
+-#: ../src/sj-extracting.c:317
++#: ../src/sj-extracting.c:318
+ msgid "_Overwrite"
+ msgstr "मिटाकर लिखें (_O)"
+ 
+-#: ../src/sj-extracting.c:318
++#: ../src/sj-extracting.c:319
+ msgid "Overwrite _All"
+ msgstr "सभी मिटाकर लिखें (_A)"
+ 
+-#: ../src/sj-extracting.c:367
++#: ../src/sj-extracting.c:368
+ #, c-format
+-#| msgid "Failed to create audio output"
+ msgid "Failed to create output directory: %s"
+ msgstr "आउटपुट निर्देशिका बनाने में विफल: %s"
+ 
+-#: ../src/sj-extracting.c:507
++#: ../src/sj-extracting.c:508
+ #, c-format
+ msgid "Estimated time left: %d:%02d (at %0.1f×)"
+ msgstr "अनुमानित शेष समय: %d:%02d (%0.1f× पर)"
+ 
+-#: ../src/sj-extracting.c:509
++#: ../src/sj-extracting.c:510
+ msgid "Estimated time left: unknown"
+ msgstr "अनुमानित शेष समय:अनजान"
+ 
+-#: ../src/sj-extracting.c:599
++#: ../src/sj-extracting.c:600
+ msgid "CD rip complete"
+ msgstr "CD रिप संपन्न"
+ 
+-#: ../src/sj-extracting.c:691
++#: ../src/sj-extracting.c:692
+ msgid "Sound Juicer could not extract this CD."
+-msgstr "Sound Juicer इस CD को नहीं निकाल सका."
++msgstr "साउंड जूसर इस CD को नहीं निकाल सका."
+ 
+-#: ../src/sj-extracting.c:693 ../src/sj-main.c:185 ../src/sj-main.c:814
+-#: ../src/sj-main.c:932 ../src/sj-main.c:1033 ../src/sj-main.c:1245
+-#: ../src/sj-main.c:1601
++#: ../src/sj-extracting.c:694 ../src/sj-main.c:185 ../src/sj-main.c:814
++#: ../src/sj-main.c:931 ../src/sj-main.c:1032 ../src/sj-main.c:1244
++#: ../src/sj-main.c:1600
+ msgid "Reason"
+ msgstr "कारण"
+ 
+ #. Change the label to Stop while extracting
+ #. TODO: find out why GTK+ needs this to work (see #364371)
+-#: ../src/sj-extracting.c:789
++#: ../src/sj-extracting.c:790
+ msgid "Stop"
+ msgstr "रूकें"
+ 
+-#: ../src/sj-extracting.c:818 ../src/sj-extracting.c:824
++#: ../src/sj-extracting.c:819 ../src/sj-extracting.c:825
+ msgid "Extracting audio from CD"
+ msgstr "अपने सीडी से संगीत निकालें"
+ 
+@@ -731,118 +730,114 @@
+ msgid "You can improve the MusicBrainz database by adding this album."
+ msgstr "आप MusicBrainz डेटाबेस को इस एल्बम को जोड़कर सुधार सकते हैं."
+ 
+-#: ../src/sj-main.c:812 ../src/sj-main.c:928 ../src/sj-main.c:1031
++#: ../src/sj-main.c:812 ../src/sj-main.c:927 ../src/sj-main.c:1030
+ msgid "Could not read the CD"
+ msgstr "सीडी नहीं पढ़ सका"
+ 
+-#: ../src/sj-main.c:813 ../src/sj-main.c:931
++#: ../src/sj-main.c:813 ../src/sj-main.c:930
+ msgid "Sound Juicer could not read the track listing on this CD."
+-msgstr "Sound Juicer इस CD पर ट्रैक सूचीकरण नहीं पा सका."
++msgstr "साउंड जूसर इस CD पर ट्रैक सूचीकरण नहीं पा सका."
+ 
+ #. Set statusbar message
+-#: ../src/sj-main.c:902
++#: ../src/sj-main.c:901
+ msgid "Retrieving track listing...please wait."
+ msgstr "ट्रैक सूचीकरण पा रहा है...कृपया रूकें."
+ 
+-#: ../src/sj-main.c:992
++#: ../src/sj-main.c:991
+ #, c-format
+-#| msgid "Sound Juicer could not access the CD-ROM device '%s'"
+ msgid "Sound Juicer could not use the CD-ROM device '%s'"
+-msgstr "Sound Juicer CD-ROM युक्ति '%s' का प्रयोग नहीं कर पाया"
++msgstr "साउंड जूसर CD-ROM युक्ति '%s' का प्रयोग नहीं कर पाया"
+ 
+-#: ../src/sj-main.c:999
++#: ../src/sj-main.c:998
+ msgid "HAL daemon may not be running."
+ msgstr "HAL डेमॉन चल नहीं रहा है."
+ 
+-#: ../src/sj-main.c:1024
++#: ../src/sj-main.c:1023
+ #, c-format
+ msgid "Sound Juicer could not access the CD-ROM device '%s'"
+-msgstr "Sound Juicer CD-ROM युक्ति '%s' का पहुंच नहीं पाया"
++msgstr "साउंड जूसर CD-ROM युक्ति '%s' का पहुंच नहीं पाया"
+ 
+-#: ../src/sj-main.c:1123
++#: ../src/sj-main.c:1122
+ msgid "No CD-ROM drives found"
+ msgstr "कोई सीडी रोम ड्राइव नहीं मिला"
+ 
+-#: ../src/sj-main.c:1124
++#: ../src/sj-main.c:1123
+ msgid "Sound Juicer could not find any CD-ROM drives to read."
+-msgstr "Sound Juicer पढने के लिये किसी CD-ROM चालन को नहीं पाया."
++msgstr "साउंड जूसर पढने के लिये किसी CD-ROM चालन को नहीं पाया."
+ 
+-#: ../src/sj-main.c:1155
++#: ../src/sj-main.c:1154
+ msgid "The currently selected audio profile is not available on your installation."
+ msgstr "आपके अधिष्ठापन पर अभी चयनित ऑडियो प्रोफाइल उपलब्ध नहीं है."
+ 
+-#: ../src/sj-main.c:1157
++#: ../src/sj-main.c:1156
+ msgid "_Change Profile"
+ msgstr "बदलें प्रोफाइल"
+ 
+-#: ../src/sj-main.c:1243
++#: ../src/sj-main.c:1242
+ msgid "Could not open URL"
+ msgstr "URL नहीं खोल सका"
+ 
+-#: ../src/sj-main.c:1244
++#: ../src/sj-main.c:1243
+ msgid "Sound Juicer could not open the submission URL"
+-msgstr "Sound Juicer सुपुर्दगी URL नहीं खोल सका"
++msgstr "साउंड जूसर सुपुर्दगी URL नहीं खोल सका"
+ 
+-#: ../src/sj-main.c:1353
++#: ../src/sj-main.c:1352
+ #, c-format
+ msgid "Unknown column %d was edited"
+ msgstr "अनजान कॉलम %d संपादित था"
+ 
+-#: ../src/sj-main.c:1494 ../src/sj-prefs.c:103
++#: ../src/sj-main.c:1493 ../src/sj-prefs.c:103
+ #, c-format
+ msgid ""
+ "Could not display help for Sound Juicer\n"
+ "%s"
+ msgstr ""
+-"Sound Juicer के लिये सहायता नहीं दिखा सका\n"
++"साउंड जूसर के लिये सहायता नहीं दिखा सका\n"
+ "%s"
+ 
+-#: ../src/sj-main.c:1599
+-#| msgid "Could not read the CD"
++#: ../src/sj-main.c:1598
+ msgid "Could not duplicate disc"
+ msgstr "डिस्क की अनुकृति नहीं कर सका"
+ 
+-#: ../src/sj-main.c:1600
+-#| msgid "Sound Juicer could not open the submission URL"
++#: ../src/sj-main.c:1599
+ msgid "Sound Juicer could not duplicate the disc"
+ msgstr "साउंड जूसर डिस्क की अनुकृति नहीं कर सका"
+ 
+-#: ../src/sj-main.c:1628
++#: ../src/sj-main.c:1627
+ msgid "Start extracting immediately"
+ msgstr "तत्काल निकलना शुरू करें"
+ 
+-#: ../src/sj-main.c:1629
++#: ../src/sj-main.c:1628
+ msgid "Start playing immediately"
+ msgstr "तत्काल चलाना शुरू करें"
+ 
+-#: ../src/sj-main.c:1630
++#: ../src/sj-main.c:1629
+ msgid "What CD device to read"
+ msgstr "किस CD को पढ़ा जाना है"
+ 
+-#: ../src/sj-main.c:1630
++#: ../src/sj-main.c:1629
+ msgid "DEVICE"
+ msgstr "उपकरण"
+ 
+-#: ../src/sj-main.c:1631
+-#| msgid "What CD device to read"
++#: ../src/sj-main.c:1630
+ msgid "URI to the CD device to read"
+ msgstr "CD युक्ति में URI पढ़ने के लिए"
+ 
+-#: ../src/sj-main.c:1644
++#: ../src/sj-main.c:1643
+ msgid "- Extract music from your CDs"
+ msgstr "- अपने सीडी से संगीत निकालें"
+ 
+-#: ../src/sj-main.c:1681
++#: ../src/sj-main.c:1680
+ msgid "Could not create GConf client.\n"
+ msgstr "GConf क्लाइंट को बना नहीं सका.\n"
+ 
+ #. this is made up
+-#: ../src/sj-main.c:1715
++#: ../src/sj-main.c:1714
+ #, c-format
+ msgid "The interface file for Sound Juicer could not be read."
+-msgstr "Sound Juicer के लिये अंतरफलक फाइल नहीं पढ़ा जा सका."
++msgstr "साउंड जूसर के लिये अंतरफलक फाइल नहीं पढ़ा जा सका."
+ 
+-#: ../src/sj-main.c:1783
++#: ../src/sj-main.c:1782
+ msgid "Track"
+ msgstr "ट्रैक"
+ 
+@@ -916,7 +911,7 @@
+ 
+ #: ../src/sj-prefs.c:59
+ msgid "Album Artist - Album Title"
+-msgstr "एल्बम कलाकार एल्बम शीर्षक"
++msgstr "एल्बम कलाकार - एल्बम शीर्षक"
+ 
+ #: ../src/sj-prefs.c:60
+ msgid "Album Artist (sortable) - Album Title"
+diff -urN a/po/ta.po b/po/ta.po
+--- a/po/ta.po	2010-05-05 20:50:51.048030101 +0530
++++ b/po/ta.po	2010-05-05 20:51:19.935029189 +0530
+@@ -7,15 +7,15 @@
+ # Felix <ifelix@redhat.com>, 2006.
+ # drtvasudevan <agnihot3@gmail.com>, 2006.
+ # Dr.T.Vasudevan <agnihot3@gmail.com>, 2007, 2008, 2009.
+-# I. Felix <ifelix@redhat.com>, 2008, 2009.
++# I. Felix <ifelix@redhat.com>, 2008, 2009, 2010.
+ msgid ""
+ msgstr ""
+ "Project-Id-Version: sound-juicer.HEAD.ta\n"
+ "Report-Msgid-Bugs-To: \n"
+-"POT-Creation-Date: 2009-05-23 19:20+0530\n"
+-"PO-Revision-Date: 2009-05-23 19:38+0530\n"
+-"Last-Translator: Dr.T.Vasudevan <agnihot3@gmail.com>\n"
+-"Language-Team: Tamil <kde-i18n-doc@lists.kde.org>\n"
++"POT-Creation-Date: 2010-03-29 14:50+0530\n"
++"PO-Revision-Date: 2010-04-16 15:22+0530\n"
++"Last-Translator: \n"
++"Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
+ "MIME-Version: 1.0\n"
+ "Content-Type: text/plain; charset=UTF-8\n"
+ "Content-Transfer-Encoding: 8bit\n"
+@@ -23,7 +23,7 @@
+ "\n"
+ "\n"
+ "\n"
+-"X-Generator: Lokalize 0.2\n"
++"X-Generator: Lokalize 1.0\n"
+ 
+ #: ../data/sound-juicer.desktop.in.in.h:1
+ msgid "Audio CD Extractor"
+@@ -63,35 +63,35 @@
+ 
+ #: ../data/sound-juicer.glade.h:8
+ msgid "<b>_Genre:</b>"
+-msgstr "<b>(_G)பாணி</b>"
++msgstr "<b>வகை (_G)</b>"
+ 
+ #: ../data/sound-juicer.glade.h:9
+ msgid "<b>_Title:</b>"
+-msgstr "<b>(_T)தலைப்பு</b>"
++msgstr "<b>தலைப்பு (_T)</b>"
+ 
+ #: ../data/sound-juicer.glade.h:10
+ msgid "<b>_Year:</b>"
+-msgstr "<b>(_Y)வருடம்</b>"
++msgstr "<b>வருடம் (_Y)</b>"
+ 
+ #: ../data/sound-juicer.glade.h:11
+ msgid "CD _drive:"
+-msgstr "குறுந்தட்டு இயக்கி"
++msgstr "குறுந்தட்டு இயக்கி (_d)"
+ 
+ #: ../data/sound-juicer.glade.h:12
+ msgid "E_ject"
+-msgstr "(_j)வெளியேற்று"
++msgstr "வெளியேற்று (_j)"
+ 
+ #: ../data/sound-juicer.glade.h:13
+ msgid "Edit _Profiles..."
+-msgstr "திருத்துக (_P)வரிஉரு"
++msgstr "திருத்துக வரிஉரு (_P)..."
+ 
+ #: ../data/sound-juicer.glade.h:14
+ msgid "File _name:"
+-msgstr "கோப்பு பெயர்:"
++msgstr "கோப்பு பெயர் (_n):"
+ 
+ #: ../data/sound-juicer.glade.h:15
+ msgid "Folder hie_rarchy:"
+-msgstr "அடைவு: படிக்கட்டு"
++msgstr "அடைவு: படிக்கட்டு (_r)"
+ 
+ #: ../data/sound-juicer.glade.h:16
+ msgid "Multiple Albums Found"
+@@ -99,11 +99,11 @@
+ 
+ #: ../data/sound-juicer.glade.h:17
+ msgid "O_utput Format:"
+-msgstr "(_u)வெளியீடு வகை"
++msgstr "வெளியீடு வகை (_u):"
+ 
+ #: ../data/sound-juicer.glade.h:18
+ msgid "Pre_vious Track"
+-msgstr "(_v)முந்திய தடம்"
++msgstr "முந்திய தடம் (_v)"
+ 
+ #: ../data/sound-juicer.glade.h:19
+ msgid "Preferences"
+@@ -122,7 +122,7 @@
+ msgstr "தத்து-  முந்திய தடத்திற்கு"
+ 
+ #: ../data/sound-juicer.glade.h:23 ../src/sj-main.c:139 ../src/sj-main.c:141
+-#: ../src/sj-main.c:1641
++#: ../src/sj-main.c:1640
+ msgid "Sound Juicer"
+ msgstr "ஸவுண்ட் ஜூஸர்"
+ 
+@@ -144,27 +144,27 @@
+ 
+ #: ../data/sound-juicer.glade.h:27
+ msgid "_Contents"
+-msgstr "_உள்ளடக்கங்கள்"
++msgstr "உள்ளடக்கங்கள் (_C)"
+ 
+ #: ../data/sound-juicer.glade.h:28 ../src/sj-main.c:232
+ msgid "_Continue"
+-msgstr "_தொடர்ந்து"
++msgstr "தொடர் (_C)"
+ 
+ #: ../data/sound-juicer.glade.h:29
+ msgid "_Deselect All"
+-msgstr "எல்லா கோப்புகளையும் விட்டு விடவும்"
++msgstr "அனைத்தையும் தேர்வு நீக்கு (_D)"
+ 
+ #: ../data/sound-juicer.glade.h:30
+ msgid "_Disc"
+-msgstr "(_D)தட்டு"
++msgstr "தட்டு (_D)"
+ 
+ #: ../data/sound-juicer.glade.h:31
+ msgid "_Duplicate Disc"
+-msgstr "வட்டை பிரதி எடு "
++msgstr "வட்டை பிரதி எடு (_D)"
+ 
+ #: ../data/sound-juicer.glade.h:32
+ msgid "_Edit"
+-msgstr "திருத்து"
++msgstr "திருத்துக (_E)"
+ 
+ #: ../data/sound-juicer.glade.h:33
+ msgid "_Eject after extracting tracks"
+@@ -172,39 +172,39 @@
+ 
+ #: ../data/sound-juicer.glade.h:34
+ msgid "_Folder:"
+-msgstr "_F அடைவு:"
++msgstr "அடைவு (_F):"
+ 
+ #: ../data/sound-juicer.glade.h:35
+ msgid "_Help"
+-msgstr "_H உதவி"
++msgstr "உதவி (_H)"
+ 
+ #: ../data/sound-juicer.glade.h:36
+ msgid "_Next Track"
+-msgstr "_N அடுத்த தடம்"
++msgstr "அடுத்த தடம் (_N)"
+ 
+ #: ../data/sound-juicer.glade.h:37
+ msgid "_Open music folder when finished"
+-msgstr "முடிந்தவுடன் இசை அடைவை திற"
++msgstr "முடிந்தவுடன் இசை அடைவை திற (_O)"
+ 
+ #: ../data/sound-juicer.glade.h:38
+ msgid "_Play / Pause"
+-msgstr "_P செயல்படுத்து/ நிறுத்து"
++msgstr "செயல்படுத்து/ நிறுத்து (_P)"
+ 
+ #: ../data/sound-juicer.glade.h:39
+ msgid "_Re-read Disc"
+-msgstr "(_R)தட்டை மீண்டும் படி"
++msgstr "தட்டை மீண்டும் படி (_R)"
+ 
+ #: ../data/sound-juicer.glade.h:40
+ msgid "_Select All"
+-msgstr "அனைத்தையும் தெரிவு செய்க"
++msgstr "அனைத்தையும் தேர்ந்தெடு (_S)"
+ 
+ #: ../data/sound-juicer.glade.h:41
+ msgid "_Strip special characters"
+-msgstr "(_S)சிறப்பு எழுத்துறுக்களை உரி"
++msgstr "சிறப்பு எழுத்துறுக்களை உரி (_S)"
+ 
+ #: ../data/sound-juicer.glade.h:42
+ msgid "_Submit Track Names..."
+-msgstr "(_S)தடம் பெயர் தருக"
++msgstr "தடம் பெயர் தருக (_S)"
+ 
+ #: ../data/sound-juicer.schemas.in.h:2
+ #, no-c-format
+@@ -389,7 +389,7 @@
+ msgstr "குறுந்தட்டை படிக்க இயலவில்லை"
+ 
+ #: ../libjuicer/sj-metadata-cdtext.c:93 ../libjuicer/sj-metadata-cdtext.c:114
+-#: ../libjuicer/sj-metadata-gvfs.c:109 ../libjuicer/sj-metadata-gvfs.c:132
++#: ../libjuicer/sj-metadata-gvfs.c:109 ../libjuicer/sj-metadata-gvfs.c:135
+ #: ../libjuicer/sj-metadata-musicbrainz.c:328 ../src/egg-play-preview.c:466
+ msgid "Unknown Artist"
+ msgstr "தெரியாத கலைஞன்"
+@@ -399,12 +399,12 @@
+ msgid "Unknown Title"
+ msgstr "தெரியாத தலைப்பு"
+ 
+-#: ../libjuicer/sj-metadata-cdtext.c:113 ../libjuicer/sj-metadata-gvfs.c:129
++#: ../libjuicer/sj-metadata-cdtext.c:113 ../libjuicer/sj-metadata-gvfs.c:131
+ #, c-format
+ msgid "Track %d"
+ msgstr "தடம் %d"
+ 
+-#: ../libjuicer/sj-metadata-getter.c:249
++#: ../libjuicer/sj-metadata-getter.c:253
+ #, c-format
+ msgid "Could not create CD lookup thread"
+ msgstr "குறுந்தட்டு காணும் தொடர்பு உருவாக்க இயலவில்லை"
+@@ -414,7 +414,7 @@
+ msgid "Cannot access CD"
+ msgstr "குறுந்தட்டை அணுக இயலவில்லை"
+ 
+-#: ../libjuicer/sj-metadata-gvfs.c:150
++#: ../libjuicer/sj-metadata-gvfs.c:156
+ #, c-format
+ msgid "Cannot access CD: %s"
+ msgstr "குறுந்தட்டை·அணுக·இயலவில்லை: %s"
+@@ -446,7 +446,7 @@
+ msgid "The URI of the audio file"
+ msgstr "ஆடியோ கோப்பின் URI"
+ 
+-#: ../src/egg-play-preview.c:175 ../src/sj-main.c:626 ../src/sj-main.c:1798
++#: ../src/egg-play-preview.c:175 ../src/sj-main.c:626 ../src/sj-main.c:1797
+ msgid "Title"
+ msgstr "தலைப்பு"
+ 
+@@ -454,7 +454,7 @@
+ msgid "The title of the current stream."
+ msgstr "நடப்பு ஸ்ட்ரீமின் தலைப்பு."
+ 
+-#: ../src/egg-play-preview.c:185 ../src/sj-main.c:632 ../src/sj-main.c:1807
++#: ../src/egg-play-preview.c:185 ../src/sj-main.c:632 ../src/sj-main.c:1806
+ msgid "Artist"
+ msgstr "கலைஞர்"
+ 
+@@ -478,7 +478,7 @@
+ msgid "The position in the current stream in seconds."
+ msgstr "நடப்பு ஸ்ட்ரீமின் நிலை விநாடிகளில்."
+ 
+-#: ../src/egg-play-preview.c:215 ../src/sj-main.c:1818
++#: ../src/egg-play-preview.c:215 ../src/sj-main.c:1817
+ msgid "Duration"
+ msgstr "காலஅளவு"
+ 
+@@ -543,25 +543,25 @@
+ msgid "translator-credits"
+ msgstr "மொழிபெயர்ப்பாளர்-சன்மானம்"
+ 
+-#: ../src/sj-extracting.c:146
++#: ../src/sj-extracting.c:147
+ #, c-format
+ msgid "Failed to get output format"
+ msgstr "வெளியீடு வடிவத்தை பெற முடியவில்லை"
+ 
+-#: ../src/sj-extracting.c:167
++#: ../src/sj-extracting.c:168
+ msgid "Name too long"
+ msgstr "பெயர் மிக நீளமாக உள்ளது"
+ 
+ #. TODO: find out why GTK+ needs this to work (see #364371)
+-#: ../src/sj-extracting.c:226
++#: ../src/sj-extracting.c:227
+ msgid "Extract"
+ msgstr "பிரித்தெடு"
+ 
+-#: ../src/sj-extracting.c:303
++#: ../src/sj-extracting.c:304
+ msgid "A file with the same name exists"
+ msgstr "ஒரு கோப்பு அதே பெயரில் உள்ளது"
+ 
+-#: ../src/sj-extracting.c:305
++#: ../src/sj-extracting.c:306
+ #, c-format
+ msgid ""
+ "A file called '%s' exists, size %s.\n"
+@@ -570,57 +570,57 @@
+ "'%s' என்ற கோப்பு உள்ளது அளவு %s.\n"
+ "இந்த தடத்தை தவிர்க்கலாமா அல்லது அழித்து மேலெழுதலாமா?"
+ 
+-#: ../src/sj-extracting.c:315
++#: ../src/sj-extracting.c:316
+ msgid "_Skip"
+-msgstr "(_S)தவிர்"
++msgstr "தவிர் (_S)"
+ 
+-#: ../src/sj-extracting.c:316
++#: ../src/sj-extracting.c:317
+ msgid "S_kip All"
+ msgstr "அனைத்தையும் தவிர் (_k)"
+ 
+-#: ../src/sj-extracting.c:317
++#: ../src/sj-extracting.c:318
+ msgid "_Overwrite"
+-msgstr "மேலெழுது"
++msgstr "மேலெழுது (_O)"
+ 
+-#: ../src/sj-extracting.c:318
++#: ../src/sj-extracting.c:319
+ msgid "Overwrite _All"
+-msgstr "அனைத்தையும் மேலெழுதுக"
++msgstr "அனைத்தும் மேலெழுது (_A)"
+ 
+-#: ../src/sj-extracting.c:367
++#: ../src/sj-extracting.c:368
+ #, c-format
+ msgid "Failed to create output directory: %s"
+ msgstr "ஒலிவெளியீட்டு அடைவை உருவாக்குதல் தோல்வியுற்றது: %s"
+ 
+-#: ../src/sj-extracting.c:507
++#: ../src/sj-extracting.c:508
+ #, c-format
+ msgid "Estimated time left: %d:%02d (at %0.1f×)"
+ msgstr "இன்னும் தேவையான நேரம்:  %d:%02d (%0.1f× வீதம்)"
+ 
+-#: ../src/sj-extracting.c:509
++#: ../src/sj-extracting.c:510
+ msgid "Estimated time left: unknown"
+ msgstr "இன்னும் தேவையான நேரம்: தெரியவில்லை"
+ 
+-#: ../src/sj-extracting.c:599
++#: ../src/sj-extracting.c:600
+ msgid "CD rip complete"
+ msgstr "குறுவட்டு எழுதுதல் முடிந்தது"
+ 
+-#: ../src/sj-extracting.c:691
++#: ../src/sj-extracting.c:692
+ msgid "Sound Juicer could not extract this CD."
+ msgstr "குறுந்தட்டை ஸவுண்ட் ஜூஸரால் பிரித்தெடுக்க இயலவில்லை."
+ 
+-#: ../src/sj-extracting.c:693 ../src/sj-main.c:185 ../src/sj-main.c:814
+-#: ../src/sj-main.c:932 ../src/sj-main.c:1033 ../src/sj-main.c:1245
+-#: ../src/sj-main.c:1601
++#: ../src/sj-extracting.c:694 ../src/sj-main.c:185 ../src/sj-main.c:814
++#: ../src/sj-main.c:931 ../src/sj-main.c:1032 ../src/sj-main.c:1244
++#: ../src/sj-main.c:1600
+ msgid "Reason"
+ msgstr "காரணம்"
+ 
+ #. Change the label to Stop while extracting
+ #. TODO: find out why GTK+ needs this to work (see #364371)
+-#: ../src/sj-extracting.c:789
++#: ../src/sj-extracting.c:790
+ msgid "Stop"
+ msgstr "நிறுத்துக"
+ 
+-#: ../src/sj-extracting.c:818 ../src/sj-extracting.c:824
++#: ../src/sj-extracting.c:819 ../src/sj-extracting.c:825
+ msgid "Extracting audio from CD"
+ msgstr "குறுந்தட்டில் இருந்து ஒலி பிரித்தெடுக்கப் படுகிறது"
+ 
+@@ -695,7 +695,7 @@
+ 
+ #: ../src/sj-main.c:118
+ msgid "E_xtract"
+-msgstr "_x பிரித்தெடு"
++msgstr "பிரித்தெடு (_x)"
+ 
+ #: ../src/sj-main.c:184
+ msgid "Could not start Sound Juicer"
+@@ -729,63 +729,63 @@
+ msgid "You can improve the MusicBrainz database by adding this album."
+ msgstr "ம்யூசிச்ப்ரெய்ன்ஸ் தரவுத்தளத்தை  இந்த ஆல்பத்தை சேர்ப்பதன் மூலம் வளர்க்கலாம்"
+ 
+-#: ../src/sj-main.c:812 ../src/sj-main.c:928 ../src/sj-main.c:1031
++#: ../src/sj-main.c:812 ../src/sj-main.c:927 ../src/sj-main.c:1030
+ msgid "Could not read the CD"
+ msgstr "குறுந்தட்டை படிக்க இயலவில்லை"
+ 
+-#: ../src/sj-main.c:813 ../src/sj-main.c:931
++#: ../src/sj-main.c:813 ../src/sj-main.c:930
+ msgid "Sound Juicer could not read the track listing on this CD."
+ msgstr "ஒலி பிழிப்பான் இந்த குறுந்தட்டில் உள்ள தட பட்டியலை படிக்க இயலவில்லை "
+ 
+ #. Set statusbar message
+-#: ../src/sj-main.c:902
++#: ../src/sj-main.c:901
+ msgid "Retrieving track listing...please wait."
+ msgstr "தட பட்டியலை மீட்டெடுக்கிறோம்...தயவு செய்து காத்திருக்கவும்"
+ 
+-#: ../src/sj-main.c:992
++#: ../src/sj-main.c:991
+ #, c-format
+ msgid "Sound Juicer could not use the CD-ROM device '%s'"
+ msgstr "'%s' குறுந்தட்டு படிக்கும் சாதனத்தை ஸவுண்ட் ஜூஸரால் தொடர்பு கொள்ள இயலவில்லை "
+ 
+-#: ../src/sj-main.c:999
++#: ../src/sj-main.c:998
+ msgid "HAL daemon may not be running."
+ msgstr "ஹால் கிங்கரன் இயங்காமல் இருக்கலாம்."
+ 
+-#: ../src/sj-main.c:1024
++#: ../src/sj-main.c:1023
+ #, c-format
+ msgid "Sound Juicer could not access the CD-ROM device '%s'"
+ msgstr "'%s' குறுந்தட்டு படிக்கும் சாதனத்தை ஸவுண்ட் ஜூஸரால் தொடர்பு கொள்ள இயலவில்லை "
+ 
+-#: ../src/sj-main.c:1123
++#: ../src/sj-main.c:1122
+ msgid "No CD-ROM drives found"
+ msgstr "உங்கள் கணினியில் குறுந்தட்டு படிக்கும் சாதனம் காணப்படவில்லை"
+ 
+-#: ../src/sj-main.c:1124
++#: ../src/sj-main.c:1123
+ msgid "Sound Juicer could not find any CD-ROM drives to read."
+ msgstr "ஸவுண்ட் ஜூஸரால் குறுந்தட்டு படிக்கும் சாதனம் ஏதும் காணப்படவில்லை"
+ 
+-#: ../src/sj-main.c:1155
++#: ../src/sj-main.c:1154
+ msgid "The currently selected audio profile is not available on your installation."
+ msgstr "இப்போது தேர்ந்தெடுத்துள்ள ஒலி வரிவுரு உங்கள் நிறுவலில் கிடைக்கப்பெறவில்லை"
+ 
+-#: ../src/sj-main.c:1157
++#: ../src/sj-main.c:1156
+ msgid "_Change Profile"
+-msgstr "_C வரிவுரு மாற்றுக"
++msgstr "வரிவுரு மாற்றுக (_C)"
+ 
+-#: ../src/sj-main.c:1243
++#: ../src/sj-main.c:1242
+ msgid "Could not open URL"
+ msgstr "யுஆர்எல் ஐ திறக்க இயலவில்லை"
+ 
+-#: ../src/sj-main.c:1244
++#: ../src/sj-main.c:1243
+ msgid "Sound Juicer could not open the submission URL"
+ msgstr "ஸவுண்ட் ஜூஸரால் தரப்பட்ட யுஆர்எல் ஐ திறக்க இயலவில்லை"
+ 
+-#: ../src/sj-main.c:1353
++#: ../src/sj-main.c:1352
+ #, c-format
+ msgid "Unknown column %d was edited"
+ msgstr "தெரியாத பத்தி %d திருத்தப்பட்டது"
+ 
+-#: ../src/sj-main.c:1494 ../src/sj-prefs.c:103
++#: ../src/sj-main.c:1493 ../src/sj-prefs.c:103
+ #, c-format
+ msgid ""
+ "Could not display help for Sound Juicer\n"
+@@ -794,53 +794,53 @@
+ "ஸவுண்ட் ஜூஸர் க்கு உதவி காண்பிக்க இயலவில்லை\n"
+ "%s"
+ 
+-#: ../src/sj-main.c:1599
++#: ../src/sj-main.c:1598
+ msgid "Could not duplicate disc"
+ msgstr "குறுந்தட்டை பிரதி எடுக்க இயலவில்லை"
+ 
+-#: ../src/sj-main.c:1600
++#: ../src/sj-main.c:1599
+ msgid "Sound Juicer could not duplicate the disc"
+ msgstr "ஸவுண்ட் ஜூஸரால் வட்டை பிரதி எடுக்க இயலவில்லை"
+ 
+-#: ../src/sj-main.c:1628
++#: ../src/sj-main.c:1627
+ msgid "Start extracting immediately"
+ msgstr "பிரித்தலை உடனே ஆரம்பி"
+ 
+-#: ../src/sj-main.c:1629
++#: ../src/sj-main.c:1628
+ msgid "Start playing immediately"
+ msgstr "இசைத்தலை உடனே ஆரம்பி"
+ 
+-#: ../src/sj-main.c:1630
++#: ../src/sj-main.c:1629
+ msgid "What CD device to read"
+ msgstr "எந்த குறுந்தட்டை படிக்க"
+ 
+-#: ../src/sj-main.c:1630
++#: ../src/sj-main.c:1629
+ msgid "DEVICE"
+ msgstr "சாதனம்"
+ 
+-#: ../src/sj-main.c:1631
++#: ../src/sj-main.c:1630
+ msgid "URI to the CD device to read"
+ msgstr "URI லிருந்து CD சாதனத்தை வாசிக்க"
+ 
+-#: ../src/sj-main.c:1644
++#: ../src/sj-main.c:1643
+ msgid "- Extract music from your CDs"
+ msgstr "- உங்கள் குறுந்தட்டுகளிலிருந்து இசையை பிரித்தெடுங்கள் "
+ 
+-#: ../src/sj-main.c:1681
++#: ../src/sj-main.c:1680
+ msgid "Could not create GConf client.\n"
+ msgstr "ஜிகான்ஃப் சார்ந்தோனை உருவாக்க இயலவில்லை \n"
+ 
+ #. this is made up
+-#: ../src/sj-main.c:1715
++#: ../src/sj-main.c:1714
+ #, c-format
+ msgid "The interface file for Sound Juicer could not be read."
+ msgstr "ஸவுண்ட் ஜூஸர் க்கு உரிய இடை நிலை கோப்பை படிக்க இயலவில்லை"
+ 
+-#: ../src/sj-main.c:1783
++#: ../src/sj-main.c:1782
+ msgid "Track"
+ msgstr "தடம்"
+ 
+-#: ../src/sj-play.c:193 ../src/sj-play.c:461 ../src/sj-play.c:490
++#: ../src/sj-play.c:193 ../src/sj-play.c:465 ../src/sj-play.c:494
+ #, c-format
+ msgid ""
+ "Error playing CD.\n"
+@@ -866,16 +866,16 @@
+ msgid "Failed to create CD source element"
+ msgstr "குறுந்தட்டு மூலங்களை உருவாக்கம் தோல்வியுற்றது"
+ 
+-#: ../src/sj-play.c:402
++#: ../src/sj-play.c:406
+ msgid "Failed to link pipeline"
+ msgstr "குழாய் பாதை இணைப்பு தோல்வியுற்றது"
+ 
+-#: ../src/sj-play.c:408
++#: ../src/sj-play.c:412
+ #, c-format
+ msgid "Failed to create audio output"
+ msgstr "ஒலிவெளியீடு உருவாக்கம் தோல்வியுற்றது"
+ 
+-#: ../src/sj-play.c:612
++#: ../src/sj-play.c:616
+ #, c-format
+ msgid "Seeking to %s"
+ msgstr "%s தேடப்படுகிறது"

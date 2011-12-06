@@ -1,0 +1,23 @@
+From 7f94a7b90f823a123bd7aaa2f49600aabfcbc24b Mon Sep 17 00:00:00 2001
+From: Bastien Nocera <hadess@hadess.net>
+Date: Thu, 10 Dec 2009 19:30:36 +0000
+Subject: Fix crasher when MusicBrainz can't read a disc
+
+But we can.
+---
+diff --git a/libjuicer/sj-metadata-musicbrainz3.c b/libjuicer/sj-metadata-musicbrainz3.c
+index 5845e0a..5374399 100644
+--- a/libjuicer/sj-metadata-musicbrainz3.c
++++ b/libjuicer/sj-metadata-musicbrainz3.c
+@@ -244,6 +244,9 @@ mb_list_albums (SjMetadata *metadata, char **url, GError **error)
+   }
+ 
+   priv->disc = mb_read_disc (priv->cdrom);
++  if (priv->disc == NULL)
++    return NULL;
++
+   if (url != NULL) {
+     mb_get_submission_url (priv->disc, NULL, 0, buffer, sizeof (buffer));
+     *url = g_strdup (buffer);
+--
+cgit v0.8.3.1

@@ -1,0 +1,12 @@
+diff -up sound-juicer-2.28.1/help/sound-juicer/sound-juicer.omf.in.doc-category sound-juicer-2.28.1/help/sound-juicer/sound-juicer.omf.in
+--- sound-juicer-2.28.1/help/sound-juicer/sound-juicer.omf.in.doc-category	2010-05-03 16:40:58.233928016 -0400
++++ sound-juicer-2.28.1/help/sound-juicer/sound-juicer.omf.in	2010-05-03 16:41:10.135962588 -0400
+@@ -2,7 +2,7 @@
+ <!DOCTYPE omf PUBLIC "-//OMF//DTD Scrollkeeper OMF Variant V1.0//EN" "http://scrollkeeper.sourceforge.net/dtds/scrollkeeper-omf-1.0/scrollkeeper-omf.dtd">
+ <omf>
+   <resource>
+-    <subject category="GNOME|Applications|Sound and Video"/>
++    <subject category="GNOME|Multimedia"/>
+     <type>manual</type>
+     <relation seriesid="f5b1de52-afee-11d7-813f-fcb0fd1dad15"/>
+     <rights type="GNU FDL" license.version="1.1" license="http://www.gnu.org/licenses/fdl.html" holder="Mike Hearn"/>
